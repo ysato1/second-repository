@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>お金をかせぐゲーム</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>お金をかせぐゲーム</h1>
+    <p>泥棒をクリックするとお金がおちるよ！</p>
+    <p>手に入れたお金：<span id="click-count"></span>円</p>
+
+    <button onclick="startAnimation()" id="start">Start</button>
+    <button onclick="stopAnimation()">Stop</button>
+    <button id =reset>Reset</button>
+    <label for="dropdown">難易度:</label>
+    <select id="difficulty">
+      <option value="1000" class="easy">かんたん</option>
+      <option value="500" class="normal">ふつう</option>
+      <option value="100" class="hard">むずかしい</option>
+    </select>
+
+    <div id="container">
+      <img id="image" src="./icon_B_0022.png" />
+    </div>
+
+    <audio id="sound" src="./小銭をばらまいた音2.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
